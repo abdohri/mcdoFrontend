@@ -6,6 +6,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
      run npm install
      run ng serve 
      got to `http://localhost:4200/`
+ ## Example of how to use it with translate 
+  #Search page :
+  ![Search page](https://github.com/abdohri/mcdoFrontend/blob/master/src/assets/img/searchPage.JPG)
+  #Dispaly result:
+  ![Search page](https://github.com/abdohri/mcdoFrontend/blob/master/src/assets/img/resultPage.JPG)
+  #Show in googple map :
+  ![Search page](https://github.com/abdohri/mcdoFrontend/blob/master/src/assets/img/showCarte.JPG)
+
+
 
 
 ## Code scaffolding
