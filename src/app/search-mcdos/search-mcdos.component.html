@@ -1,0 +1,46 @@
+<div class="col-md-10">
+  <fieldset>
+     <legend style="background-color: #f5f5f5; width:20%;border-radius: 20%;font-size: 16px;" >
+        <h1 class="g-title-alpha"translate>Search zone</h1>
+     </legend>
+     <table class="searchTable">
+        <tr class="">
+           <td>    <label class="control-label vertical-label" translate>global_Search</label>
+           </td>
+           <td colspan="3">
+              <div class="input-group">
+                 <input class="form-control" type="text" [(ngModel)]="state" (ngModelChange)="searchMcdos(state)" />
+              </div>
+              <div class="search-result"  *ngIf="macdos.length>0">
+                 <ul>
+                    <div *ngIf="macdos.length>0">
+                       <li *ngFor="let mcdo of macdos ">
+                          <a (click)="onMcdoSelect(mcdo)" >{{mcdo.name}} {{mcdo.adress}}</a>
+                       </li>
+                    </div>
+                 </ul>
+              </div>
+           </td>
+        </tr>
+     </table>
+  </fieldset>
+  <br>
+</div>
+<ngx-smart-modal #myModalo identifier="myModalo">
+  <br>
+  <fieldset>
+     <legend style="background-color: #f5f5f5; width:25%;border-radius: 20%;font-size: 12px" >
+        <p class="g-title-alpha" translate>Mcdonald's location</p>
+     </legend>
+     <br>
+     <div #map style="height:400px;width:450px"></div>
+  </fieldset>
+  <br> <br>
+  <table>
+     <tr>
+        <td>
+           <button (click)="myModalo.close()"  class="g-form-action-item g-btn g-btn--red" translate>Close</button>
+        </td>
+     </tr>
+  </table>
+</ngx-smart-modal>

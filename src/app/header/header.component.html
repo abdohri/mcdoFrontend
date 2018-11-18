@@ -1,0 +1,30 @@
+<div class="g-span-2">
+  <ul class="g-nav g-side-nav">
+   
+    <li class="g-side-nav-item g-active ">
+      <button class="g-btn--no-shade g-btn--blue g-btn-icons"  [routerLink]="['/mcdos']">
+        <span class="g-icons g-inscription-small"></span><p translate>Search McDonald's</p></button>
+    </li>
+   
+  </ul>
+</div>
+<header class="g-header g-grid">
+      <ul class="g-nav g-main-nav g-float-l">
+        <li class="g-main-nav-item g-first-item">
+          <button class="g-btn--no-shade g-main-nav-button"  [routerLink]="['/mcdos']" translate>All McDonald's </button>
+        </li>
+      </ul>
+
+      <div class="g-user-action-wrapper g-float-r">
+        <ul class="g-nav g-user-action g-float-l">
+         
+          <li class="g-user-action-item">
+            <form class="g-user-action-form" action="#">
+              <a style="cursor: pointer;"  (click)="switchLanguage('en')"> <img src="../assets/img/flag-en.png" width="25" height="25" /></a> 
+              <a (click)="switchLanguage('fr')"  style="cursor: pointer;"><img src="../assets/img/flag-fr.png" width="25" height="25" /></a>
+            </form>
+          </li>
+    
+        </ul>
+      </div>
+    </header>
