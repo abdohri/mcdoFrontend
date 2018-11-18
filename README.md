@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 ## Steps to run it :
      git clone repository .
-     run nom install
+     run npm install
      run ng serve 
      got to `http://localhost:4200/`
 
